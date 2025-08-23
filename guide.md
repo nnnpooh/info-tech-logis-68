@@ -144,7 +144,7 @@ listen [::]:80;
     root /var/www/myapp;
     index index.php index.html index.htm;
 
-    server_name my_app_domain 10.66.66.32;
+    server_name server_local_url;
 
     location / {
         try_files $uri $uri/ =404;
