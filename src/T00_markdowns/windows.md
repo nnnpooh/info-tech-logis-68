@@ -38,3 +38,9 @@
 - `choco install dbeaver -y`
 - `choco install git -y`
 - `choco install wireguard -y`
+
+# 6. Disable WireGuard Autostart
+
+- Search for `Run`
+- Type `services.msc`
+- Locate your WireGuard tunnel(s), right-click, select Properties, and set Startup type to Manual.
