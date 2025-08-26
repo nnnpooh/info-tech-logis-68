@@ -2,8 +2,9 @@
 
 ## Preparation
 
-[Windows](./src/T01_windows.md)
+- [Windows](./src/T00_markdowns/windows.md)
 
-## Guide
+## Introduction
 
-[Guide](./src/guide.md)
+- [HTML](./src/T01_intro/T01.html)
+- [PDF](./src/T01_intro/T01.pdf)

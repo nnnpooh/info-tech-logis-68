@@ -33,7 +33,7 @@
 
 ## 5. Install software
 
-- Close and reopen PowerShell with administrative right
+- Close and reopen Terminal with administrative right
 - `choco install vscode -y`
 - `choco install dbeaver -y`
 - `choco install git -y`
