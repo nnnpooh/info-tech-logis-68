@@ -2,7 +2,7 @@
 
 ## Preparation
 
-- [Windows](./src/T00_markdowns/windows.md)
+- [Windows](https://github.com/nnnpooh/info-tech-logis-68/blob/main/src/T00_markdowns/windows.md)
 
 ## Introduction
 
