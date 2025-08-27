@@ -20,7 +20,7 @@
 ## 3. Install PowerShell 7
 
 - Open Command Prompt (`cmd`) as an administrator.
-- `winget install --id Microsoft.PowerShell --source winget`
+- `choco install powershell-core`
 
 ## 4. Set PowerShell 7 as Default in Windows Terminal
 
