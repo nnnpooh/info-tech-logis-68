@@ -37,6 +37,7 @@
 - `choco install vscode -y`
 - `choco install dbeaver -y`
 - `choco install git -y`
+- `choco install bind-toolsonly -y`
 - `choco install wireguard -y`
 
 # 6. Disable WireGuard Autostart
