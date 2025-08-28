@@ -31,7 +31,7 @@ server
 	root /var/www/myapp;
 	index index.php index.html index.htm;
 
-	server_name server_local_url;
+	server_name *.local;
 
 	location /
 	{
@@ -97,6 +97,43 @@ Insert into the PHP file:
 
 Visit: `http://your_server_url`  
 👉 You should see _Hello World 🎉_
+
+## Add "Public" Domain Block
+
+If you visit your `public_server_url`, you will see the default page. You need to open the Nginx configuration file
+
+```bash
+sudo nano /etc/nginx/sites-available/myapp
+```
+
+Add the following (notice `sever_name` directive)
+
+```nginx
+server
+{
+	listen 80;
+	listen [::]:80;
+
+	root /var/www/myapp;
+	index index.php index.html index.htm;
+
+	server_name *.iecmu.com;
+
+	location /
+	{
+		try_files $uri $uri/ =404;
+	}
+
+	location ~ \.php$
+	{
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+	}
+}
+
+```
+
+Try visiting your site from the public url. 🎉
 
 ## 💻 VS Code Remote Development
 

@@ -1,8 +1,8 @@
 # 🐬 MariaDB Setup
 
-Install MariaDB:
+## Install MariaDB
 
-```
+```bash
 sudo apt install mariadb-server
 sudo mysql_secure_installation
 ```
@@ -19,7 +19,7 @@ Check MariaDB:
 sudo systemctl status mariadb
 ```
 
-## ⚙️ Configure Remote Root Access (optional)
+## ⚙️ Configure Remote Root Access
 
 ```
 sudo mariadb -uroot -p
@@ -51,3 +51,7 @@ Restart database service:
 ```
 sudo systemctl restart mariadb
 ```
+
+## Test Connectivity
+
+You should be able to access database from your computer using `dbeaver`.
