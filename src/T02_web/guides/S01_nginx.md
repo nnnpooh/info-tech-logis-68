@@ -2,7 +2,7 @@
 
 ## Install Nginx:
 
-```
+```bash
 sudo apt update
 sudo apt install nginx
 ```
@@ -20,19 +20,19 @@ Useful commands:
 By default, Nginx runs as the **`www-data`** user (on Ubuntu/Debian).  
 If you want Nginx processes to run as `admin` instead, edit the **main config file**:
 
-```
+```bash
 sudo nano /etc/nginx/nginx.conf
 ```
 
 At the very top, update this line:
 
-```
+```bash
 user admin;
 ```
 
 Save the file, then test config and restart:
 
-```
+```bash
 sudo nginx -t
 sudo systemctl restart nginx
 ```

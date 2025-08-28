@@ -55,14 +55,14 @@ sudo ln -s /etc/nginx/sites-available/myapp /etc/nginx/sites-enabled
 
 Test and reload
 
-```
+```bash
 sudo nginx -t
 sudo systemctl restart nginx
 ```
 
 ## 🐘 Test PHP
 
-```
+```bash
 nano /var/www/myapp/info.php
 ```
 
@@ -77,7 +77,7 @@ Visit `http://your_server_url/info.php`
 
 ## Hello World
 
-```
+```bash
 nano /var/www/myapp/index.php
 ```
 
@@ -131,6 +131,13 @@ server
 	}
 }
 
+```
+
+Test and reload
+
+```bash
+sudo nginx -t
+sudo systemctl restart nginx
 ```
 
 Try visiting your site from the public url. 🎉

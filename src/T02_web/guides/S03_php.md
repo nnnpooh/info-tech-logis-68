@@ -2,7 +2,7 @@
 
 ## Install PHP with MariaDB support
 
-```
+```bash
 sudo apt install php-fpm php-mysql
 ```
 
@@ -12,20 +12,20 @@ If you change the **Nginx worker process user** to `admin` (instead of the defau
 
 Edit the PHP-FPM pool config:
 
-```
+```bash
 sudo nano /etc/php/8.2/fpm/pool.d/www.conf
 ```
 
 Find and update these lines:
 
-```
+```bash
 listen.owner = admin
 listen.group = admin
 ```
 
 Restart PHP-FPM and Nginx:
 
-```
+```bash
 sudo systemctl restart php8.2-fpm
 sudo systemctl restart nginx
 ```

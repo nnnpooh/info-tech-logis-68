@@ -15,13 +15,13 @@ sudo mysql_secure_installation
 
 Check MariaDB:
 
-```
+```bash
 sudo systemctl status mariadb
 ```
 
 ## ⚙️ Configure Remote Root Access
 
-```
+```bash
 sudo mariadb -uroot -p
 ```
 
@@ -35,7 +35,7 @@ FLUSH PRIVILEGES;
 
 Update config:
 
-```
+```bash
 sudo nano /etc/mysql/my.cnf
 ```
 
@@ -48,7 +48,7 @@ bind-address = 0.0.0.0
 
 Restart database service:
 
-```
+```bash
 sudo systemctl restart mariadb
 ```
 
