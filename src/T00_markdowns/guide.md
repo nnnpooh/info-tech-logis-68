@@ -108,9 +108,19 @@ Install packages:
 ```
 
 sudo apt install python3-venv python3-dev build-essential pkg-config \
-redis-server xvfb libfontconfig wkhtmltopdf \
+redis-server xvfb libfontconfig  \
 default-libmysqlclient-dev software-properties-common mariadb-client -y
 
+```
+
+```
+sudo apt install xfonts-75dpi &&
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.bookworm_amd64.deb &&
+sudo dpkg -i wkhtmltox_0.12.6.1-3.bookworm_amd64.deb &&
+sudo cp /usr/local/bin/wkhtmlto* /usr/bin/ &&
+sudo chmod a+x /usr/bin/wk* &&
+sudo rm wk* &&
+sudo apt --fix-broken install -y
 ```
 
 ### Configure MariaDB for UTF-8
