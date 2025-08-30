@@ -114,13 +114,14 @@ default-libmysqlclient-dev software-properties-common mariadb-client -y
 ```
 
 ```
-sudo apt install xfonts-75dpi &&
+sudo apt install xfonts-75dpi fontconfig libxext6 libxrender1 xfonts-base &&
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.bookworm_amd64.deb &&
 sudo dpkg -i wkhtmltox_0.12.6.1-3.bookworm_amd64.deb &&
 sudo cp /usr/local/bin/wkhtmlto* /usr/bin/ &&
 sudo chmod a+x /usr/bin/wk* &&
 sudo rm wk* &&
 sudo apt --fix-broken install -y
+echo "Expect wkhtmltopdf with patched qt version ==> $(wkhtmltopdf --version)"
 ```
 
 ### Configure MariaDB for UTF-8
