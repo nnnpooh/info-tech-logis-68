@@ -1,5 +1,9 @@
 # Topics
 
+## Resources
+
+- [Lecture VDOs](https://www.youtube.com/playlist?list=PLNGLpHQhvGru1I9uqUgz15joCSCt0r3wI)
+
 ## Preparation
 
 - [Windows](https://github.com/nnnpooh/info-tech-logis-68/blob/main/src/T00_markdowns/windows.md)
