@@ -6,6 +6,24 @@
 sudo apt install php-fpm php-mysql
 ```
 
+> PHP-FPM, or PHP FastCGI Process Manager, is an advanced and high-performance FastCGI implementation for PHP. It is specifically designed to manage PHP processes and handle requests efficiently, especially in high-traffic web environments.
+
+## Hello World
+
+Create a php file call `test.php`.
+
+```php
+<?php
+echo "Hello, World!";
+?>
+```
+
+Execute the file
+
+```bash
+php test.php
+```
+
 ## Make sure nginx can connect to PHP-FPM
 
 If you change the **Nginx worker process user** to `admin` (instead of the default `www-data`), you must also update the PHP-FPM pool configuration so PHP sockets are owned by the same user.
