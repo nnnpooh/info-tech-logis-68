@@ -3,7 +3,7 @@
 ## Install PHP with MariaDB support
 
 ```bash
-sudo apt install php-fpm php-mysql
+sudo apt install php-fpm php-mysql -y
 ```
 
 > PHP-FPM, or PHP FastCGI Process Manager, is an advanced and high-performance FastCGI implementation for PHP. It is specifically designed to manage PHP processes and handle requests efficiently, especially in high-traffic web environments.

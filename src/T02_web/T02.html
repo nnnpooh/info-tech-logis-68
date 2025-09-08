@@ -68,11 +68,11 @@
   title <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT NULL</span>
 );
 
-<span class="hljs-keyword">CREATE TABLE</span> IF <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> orderdetail (
+<span class="hljs-keyword">CREATE TABLE</span> IF <span class="hljs-keyword">NOT</span> <span class="hljs-keyword">EXISTS</span> iebookstore.orderdetail (
   orderID <span class="hljs-type">INT</span> AUTO_INCREMENT <span class="hljs-keyword">PRIMARY KEY</span>,
   isbn <span class="hljs-type">VARCHAR</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">NOT NULL</span>,
   quantity <span class="hljs-type">INT</span> <span class="hljs-keyword">NOT NULL</span>,
-  <span class="hljs-keyword">FOREIGN KEY</span> (isbn) <span class="hljs-keyword">REFERENCES</span> booklist(isbn)
+  <span class="hljs-keyword">FOREIGN KEY</span> (isbn) <span class="hljs-keyword">REFERENCES</span> iebookstore.booklist(isbn)
 );
 </code></pre>
 <footer>255766: Information Technology for Logistics (Nirand)</footer>
