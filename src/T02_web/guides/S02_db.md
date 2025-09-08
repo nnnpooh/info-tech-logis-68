@@ -55,3 +55,11 @@ sudo systemctl restart mariadb
 ## Test Connectivity
 
 You should be able to access database from your computer using `dbeaver`.
+
+## Debugging
+
+Check user
+
+- `SELECT User, Host FROM mysql.user;`
+  Change password
+- `ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '1234';`
