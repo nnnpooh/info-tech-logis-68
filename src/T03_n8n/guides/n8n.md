@@ -17,7 +17,7 @@ export N8N_SECURE_COOKIE=false
 export N8N_PORT=5678
 export N8N_RUNNERS_ENABLED=true
 export DB_SQLITE_POOL_SIZE=2
-export N8N_EDITOR_BASE_URL="https://pm1-ct100-n8n.iecmu.com"
+export N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com"
 
 ```
 
@@ -29,8 +29,8 @@ n8n
 
 You can visit the site
 
-- Locally (e.g. `http://pm1-ct102.local:5678`)
-- Publicy (e.g. `https://pm1-ct102-n8n.iecmu.com`)
+- Locally (e.g. `http://pmX-ctXXX.local:5678`)
+- Publicy (e.g. `https://pmX-ctXXX-n8n.iecmu.com`)
 
 > Running n8n directly from the terminal will keep it active only while the terminal is open, so the process stops if the window is closed. To keep n8n running continuously as a background service, a process manager like Supervisor will be used.
 
@@ -61,7 +61,7 @@ stdout_logfile=/var/log/n8n.log
 environment=PATH=/home/admin/.nvm/versions/node/v22.18.0/bin:/usr/local/bin:/usr/bin:/bin, \
 N8N_PORT=5678, \
 N8N_SECURE_COOKIE=false, \
-N8N_EDITOR_BASE_URL="https://pm1-ct100-n8n.iecmu.com", \
+N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com", \
 N8N_RUNNERS_ENABLED=true, \
 DB_SQLITE_POOL_SIZE=2
 ```
