@@ -18,7 +18,7 @@ export N8N_PORT=5678
 export N8N_RUNNERS_ENABLED=true
 export DB_SQLITE_POOL_SIZE=2
 export N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com"
-
+export TZ="Asia/Bangkok"
 ```
 
 Start program
@@ -58,12 +58,14 @@ startsecs=10
 user=admin
 redirect_stderr=true
 stdout_logfile=/var/log/n8n.log
-environment=PATH=/home/admin/.nvm/versions/node/v22.18.0/bin:/usr/local/bin:/usr/bin:/bin, \
-N8N_PORT=5678, \
-N8N_SECURE_COOKIE=false, \
-N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com", \
-N8N_RUNNERS_ENABLED=true, \
-DB_SQLITE_POOL_SIZE=2
+environment=PATH=
+    /home/admin/.nvm/versions/node/v22.18.0/bin:/usr/local/bin:/usr/bin:/bin,
+    N8N_PORT=5678,
+    N8N_SECURE_COOKIE=false,
+    N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com",
+    N8N_RUNNERS_ENABLED=true,
+    DB_SQLITE_POOL_SIZE=2,
+    TZ="Asia/Bangkok"
 ```
 
 Restart supervisor:
