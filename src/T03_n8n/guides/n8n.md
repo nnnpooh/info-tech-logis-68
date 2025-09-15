@@ -51,7 +51,7 @@ sudo nano /etc/supervisor/conf.d/n8n.conf
 ```bash
 [program:n8n]
 directory=/home/admin
-command=/home/admin/.nvm/versions/node/v22.18.0/bin/n8n start
+command=/home/admin/.nvm/versions/node/v22.19.0/bin/n8n start
 autostart=true
 autorestart=true
 startsecs=10
@@ -59,7 +59,7 @@ user=admin
 redirect_stderr=true
 stdout_logfile=/var/log/n8n.log
 environment=PATH=
-    /home/admin/.nvm/versions/node/v22.18.0/bin:/usr/local/bin:/usr/bin:/bin,
+    /home/admin/.nvm/versions/node/v22.19.0/bin:/usr/local/bin:/usr/bin:/bin,
     N8N_PORT=5678,
     N8N_SECURE_COOKIE=false,
     N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com",
