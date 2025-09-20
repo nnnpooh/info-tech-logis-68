@@ -18,6 +18,8 @@ export N8N_PORT=5678
 export N8N_RUNNERS_ENABLED=true
 export DB_SQLITE_POOL_SIZE=2
 export N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com"
+export WEBHOOK_URL="https://pmX-ctXXX-n8n.iecmu.com"
+
 export TZ="Asia/Bangkok"
 ```
 
@@ -65,6 +67,7 @@ environment=PATH=
     N8N_EDITOR_BASE_URL="https://pmX-ctXXX-n8n.iecmu.com",
     N8N_RUNNERS_ENABLED=true,
     DB_SQLITE_POOL_SIZE=2,
+    WEBHOOK_URL="https://pmX-ctXXX-n8n.iecmu.com",
     TZ="Asia/Bangkok"
 ```
 

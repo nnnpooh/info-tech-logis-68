@@ -8,6 +8,13 @@ sudo apt install php-fpm php-mysql -y
 
 > PHP-FPM, or PHP FastCGI Process Manager, is an advanced and high-performance FastCGI implementation for PHP. It is specifically designed to manage PHP processes and handle requests efficiently, especially in high-traffic web environments.
 
+### Install `php-curl` (for HTTP request)
+
+- `sudo apt-get install php-curl`
+- `sudo systemctl restart nginx`
+- `php -m | grep curl`
+  - Should see `curl`
+
 ## Hello World
 
 Create a php file call `test.php`.
