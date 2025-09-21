@@ -15,33 +15,37 @@
             img.src = baseUrl + '?t=' + new Date().getTime();
         }
 
-        // Turn LED ON
-        function turnLedOn() {
-            fetch('https://pm1-ct102-n8n.iecmu.com/webhook/led?led=on', {
-                    method: 'GET'
-                })
-                .then(response => {
-                    alert('LED turned ON');
-                });
-        }
+        // Turn LED ON (Uncomment for control)
+        // -----------------------------------
+        // function turnLedOn() {
+        //     fetch('https://pm1-ct102-n8n.iecmu.com/webhook/led?led=on', {
+        //             method: 'GET'
+        //         })
+        //         .then(response => {
+        //             alert('LED turned ON');
+        //         });
+        // }
 
-        // Turn LED OFF
-        function turnLedOff() {
-            fetch('https://pm1-ct102-n8n.iecmu.com/webhook/led?led=off', {
-                    method: 'GET'
-                })
-                .then(response => {
-                    alert('LED turned OFF');
-                });
-        }
+        // Turn LED OFF (Uncomment for control)
+        // -----------------------------------
+        // function turnLedOff() {
+        //     fetch('https://pm1-ct102-n8n.iecmu.com/webhook/led?led=off', {
+        //             method: 'GET'
+        //         })
+        //         .then(response => {
+        //             alert('LED turned OFF');
+        //         });
+        // }
 
         // Start refreshing after the page loads
         window.onload = function() {
             refreshImage(); // Initial load
             setInterval(refreshImage, 2000); // Repeat
 
-            document.getElementById('btn-on').addEventListener('click', turnLedOn);
-            document.getElementById('btn-off').addEventListener('click', turnLedOff);
+            // Uncomment for control
+            // -----------------------------------
+            // document.getElementById('btn-on').addEventListener('click', turnLedOn);
+            // document.getElementById('btn-off').addEventListener('click', turnLedOff);
 
         };
     </script>
