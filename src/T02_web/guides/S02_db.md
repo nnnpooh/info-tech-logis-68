@@ -62,4 +62,4 @@ Check user
 
 - `SELECT User, Host FROM mysql.user;`
   Change password
-- `ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '1234';`
+- `ALTER USER 'root'@'%' IDENTIFIED BY '1234';`
