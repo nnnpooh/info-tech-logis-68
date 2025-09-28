@@ -10,7 +10,7 @@
         // This function will refresh the image every second
         function refreshImage() {
             const img = document.getElementById('sensor-img');
-            const baseUrl = 'https://pm1-ct102-n8n.iecmu.com/webhook/light';
+            const baseUrl = 'https://pmX-ctXXX-n8n.iecmu.com/webhook/light';
             // Add a timestamp to bypass browser cache
             img.src = baseUrl + '?t=' + new Date().getTime();
         }
@@ -18,7 +18,7 @@
         // Turn LED ON (Uncomment for control)
         // -----------------------------------
         // function turnLedOn() {
-        //     fetch('https://pm1-ct102-n8n.iecmu.com/webhook/led?led=on', {
+        //     fetch('https://pmX-ctXXX-n8n.iecmu.com/webhook/led?led=on', {
         //             method: 'GET'
         //         })
         //         .then(response => {
@@ -29,7 +29,7 @@
         // Turn LED OFF (Uncomment for control)
         // -----------------------------------
         // function turnLedOff() {
-        //     fetch('https://pm1-ct102-n8n.iecmu.com/webhook/led?led=off', {
+        //     fetch('https://pmX-ctXXX-n8n.iecmu.com/webhook/led?led=off', {
         //             method: 'GET'
         //         })
         //         .then(response => {

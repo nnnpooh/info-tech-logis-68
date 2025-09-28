@@ -62,10 +62,10 @@
                 echo "<p style='color:green;'>New order added successfully!</p>";
 
                 // Send webhook (Test)
-                // $webhookUrlTest = "https://pm1-ct102-n8n.iecmu.com/webhook-test/order";
+                // $webhookUrlTest = "https://pmX-ctXXX-n8n.iecmu.com/webhook-test/order";
                 // sendWebhook($mysqli, $mysqli->insert_id, $webhookUrlTest);
                 // Send webhook (Production)
-                // $webhookUrlProd = "https://pm1-ct102-n8n.iecmu.com/webhook/order";
+                // $webhookUrlProd = "https://pmX-ctXXX-n8n.iecmu.com/webhook/order";
                 // sendWebhook($mysqli, $mysqli->insert_id, $webhookUrlProd);
                 // -----------
             } else {
