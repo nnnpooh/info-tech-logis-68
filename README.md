@@ -22,4 +22,9 @@
 ## n8n
 
 - [HTML](./src/T03_n8n/T03.html)
-- [PDF](./src/T02_n8n/T03.pdf)
+- [PDF](./src/T03_n8n/T03.pdf)
+
+## ERPNext
+
+- [HTML](./src/T04_erpnext/T04.html)
+- [PDF](./src/T04_erpnext/T04.pdf)
