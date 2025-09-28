@@ -39,6 +39,7 @@
 - `choco install git -y`
 - `choco install bind-toolsonly -y`
 - `choco install wireguard -y`
+- `choco install insomnia-rest-api-client`
 
 # 6. Disable WireGuard Autostart
 

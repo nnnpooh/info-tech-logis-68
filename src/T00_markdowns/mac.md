@@ -11,3 +11,4 @@
 - `brew install git`
 - `brew install bind`
 - https://www.wireguard.com/install/
+- `brew install --cask insomnia`
