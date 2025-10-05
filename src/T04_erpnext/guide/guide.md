@@ -2,6 +2,12 @@
 
 ## Setup
 
+### Making sure your repository list is updated
+
+```bash
+sudo apt clean && sudo apt update
+```
+
 ### Installing Additional Packages
 
 ```bash
@@ -30,6 +36,7 @@ sudo apt install pkg-config
 curl -LsSf https://astral.sh/uv/install.sh | sh
 source ~/.profile
 uv venv
+uv pip install frappe-bench
 ```
 
 Auto-enable venv:
